@@ -4,15 +4,12 @@
 主要去除 Magsik 特征（最大化）同时学习代码逻辑。
 
 
-## Introduction
+## 介绍
 
-Magisk is a suite of open source software for customizing Android, supporting devices higher than Android 6.0.<br>
-Some highlight features:
-
-- **MagiskSU**: Provide root access for applications
+- **MagiskSU**: 替代传统 su 二进制，通过 Unix Socket 与 magiskd 通信处理权限请求
 - **Magisk Modules**: Modify read-only partitions by installing modules
 - **MagiskBoot**: The most complete tool for unpacking and repacking Android boot images
-- **Zygisk**: Run code in every Android applications' processes
+- **Zygisk**: 结合 LD_PRELOAD 和 PLT Hook 实现进程级注入
 
 
 ## 吐槽
